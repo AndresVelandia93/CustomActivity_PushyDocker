@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Prisma Custom Activity</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script data-main="js/main" src="js/require.js"></script>
+      <style>
+        .header {
+         color: #36A0FF;
+         font-size: 27px;
+         padding: 10px;
+         }
+        .bigicon {
+         font-size: 35px;
+         color: #36A0FF;
+         }
+        .form-control::placeholder {
+          color:#BDBDBD;
+        }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="well well-sm">
+                  <form action="">
+                     <legend class="text-center header">Push Terminales</legend>
+                     <!-- Contacto -->
+                     <div class="form-group">
+                        <label for="LabelIdContacto" class="form-label">Id de Cuenta:</label>
+                        <select class="form-select" id="SelectContacto" name="SelectContacto" >
+                           <option disabled selected>Seleccione una opción</option>
+                        </select>
+                     </div>
+                     <div class="row">
+                        <!-- ID_CAMPANA -->
+                        <div class="form-group col-md-4">
+                           <label for="IdCampana" class="form-label">Id Campaña:</label>
+                           <input class="form-control" type="text" id="IdCampana" name="IdCampana" value="" placeholder="Id. de la Campaña">
+                        </div>
+                        <!-- TIME_TO_LIVE -->
+                        <div class="form-group col-md-4">
+                           <label for="TimeToLive" class="form-label">Time To Live:</label>
+                           <input class="form-control" type="text" id="TimeToLive" name="TimeToLive" value="2592000" placeholder="Tiempo Duración">
+                        </div>
+                        <!-- CATEGORIA -->
+                        <div class="form-group col-md-4">
+                           <label for="Categoria" class="form-label">Categoria:</label>
+                           <input class="form-control" type="text" id="Categoria" name="Categoria" value="" placeholder="Categoría">
+                        </div>
+                     </div>
+                     <!-- TITLE -->
+                     <div class="form-group">
+                        <label for="Title" class="form-label">Title:</label>
+                        <input class="form-control" type="text" id="Title" name="Title" value="" placeholder="Título de la Push">
+                     </div>
+                     <!-- SHORT_DESCRIPTION -->
+                     <div class="form-group">
+                        <label for="ShortDescription" class="form-label">Short Description:</label>
+                        <textarea class="form-control flex-grow-1" id="ShortDescription" name="ShortDescription" placeholder="Descripción corta de la Push" rows="2"> </textarea>
+                     </div>
+                     <!-- LONG_DESCRIPTION -->
+                     <div class="form-group">
+                        <label for="LongDescription" class="form-label">Long Description:</label>
+                        <textarea class="form-control flex-grow-1" id="LongDescription" name="LongDescription" placeholder="Descripción larga de la Push" rows="4"> </textarea>
+                     </div>
+                     <div class="row">
+                        <!-- CALL_TO_ACTION -->
+                        <div class="form-group col-md-6">
+                           <label for="CallToAction" class="form-label">CTA1:</label>
+                           <input class="form-control" type="text" id="CallToAction" name="CallToAction" value="" placeholder="Enlace Numero 1">
+                        </div>
+                        <!-- CALLTOACTIONLABEL -->
+                        <div class="form-group col-md-6">
+                           <label for="CallToActionLabel" class="form-label">CTA1 Nombre:</label>
+                           <input class="form-control" type="text" id="CallToActionLabel" name="CallToActionLabel" value="" placeholder="Etiqueta Enlace 1">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <!-- SECONDARYCALLTOACTION -->
+                        <div class="form-group col-md-6">
+                           <label for="SecondaryCallToAction" class="form-label">CTA2:</label>
+                           <input class="form-control" type="text" id="SecondaryCallToAction" name="SecondaryCallToAction" value="" placeholder="Enlace Numero 2">
+                        </div>
+                        <!-- SECONDARYCALLTOACTIONLABEL -->
+                        <div class="form-group col-md-6">
+                           <label for="SecondaryCallToActionLabel" class="form-label">CTA2 Nombre:</label>
+                           <input class="form-control" type="text" id="SecondaryCallToActionLabel" name="SecondaryCallToActionLabel" value="" placeholder="Etiqueta Enlace 2">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <!-- NOMBRE -->
+                        <div class="form-group col-md-6">
+                           <label for="Nombre" class="form-label">Nombre:</label>
+                           <input class="form-control" type="text" id="Nombre" name="Nombre" value="" placeholder="Nombre de la Campaña">
+                        </div>
+                        <!-- MODULO -->
+                        <div class="form-group col-md-6">
+                           <label for="Modulo" class="form-label">Modulo:</label>
+                           <input class="form-control" type="text" id="Modulo" name="Modulo" value="" placeholder="Módulo de la Campaña">
+                        </div>
+                     </div>
+                     <!-- Fin -->
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

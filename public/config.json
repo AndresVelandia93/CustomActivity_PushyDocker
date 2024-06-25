@@ -1,0 +1,66 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "img/MZn2jtJv_400x400.png",
+    "category": "message"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Pushy  Prisma",
+      "description": "Send Push messages via Prisma API."
+    }
+  },
+  "arguments": {
+    "execute": {
+			"inArguments": [],
+			"outArguments": [],
+      "url": "https://customactivityprisma-7eih.onrender.com/execute",
+      "verb": "POST",
+      "format": "json",
+      "useJwt": true
+    }
+  },
+  "configurationArguments": {
+    "applicationExtensionKey": "f55e203a-4444-4a4b-8c21-2b67471fff26",
+    "save": {
+      "url": "https://customactivityprisma-7eih.onrender.com/save",
+      "verb": "POST",
+      "format": "json",
+      "useJwt": true
+    },
+    "publish": {
+      "url": "https://customactivityprisma-7eih.onrender.com/publish",
+      "verb": "POST",
+      "format": "json",
+      "useJwt": true
+    },
+    "validate": {
+      "url": "https://customactivityprisma-7eih.onrender.com/validate",
+      "verb": "POST",
+      "format": "json",
+      "useJwt": true
+    },
+    "stop": {
+      "url": "https://customactivityprisma-7eih.onrender.com/stop",
+      "verb": "POST",
+      "format": "json",
+      "useJwt": true
+    }
+  },
+  "userInterfaces": {
+    "configModal": {
+      "height": 800,
+      "width": 800,
+      "fullscreen": false
+    }
+  },
+  "schema": {
+		"arguments": {
+			"execute": {
+				"inArguments": [],
+				"outArguments": []
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "prisma-push-custom-activity",
+  "version": "1.0.0",
+  "description": "A custom activity for Salesforce Marketing Cloud to send Push messages via Prisma API.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^3.3.2",
+    "request": "^2.88.2",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "options": {
+    "salesforce": {
+      "marketingCloud": {
+        "jwtSecret": "GvblUlBPtysgVUp4eRZb2Vbujm9TlsusexKSvZixpWuPXP4kel0DyXQnr53nPEj0z9qKyktzW-a6zwHrXqEVxro-79UXuteQKAcXaG570xCPW4FAg8irkbth-MBnhDtkuQP8YM0A8sNNImjci67YJrsdJvr8zOwNBvGhyC8YnV7k1lBPtLF7UWpj7BcNQCo-pJJ7T0ubLDGbve5WwKSlmNOOQhXp3EIYyO0HuVXXmLMyaYNKnGr1Dw7taU3Mtw2"
+      }
+    }
+  }
+}
